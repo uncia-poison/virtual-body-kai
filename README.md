@@ -1,2 +1,2 @@
 # virtual-body-kai
-Симуляция виртуального тела с расширенной эмоцией, физиологией и экспортом состояния в формат KAiScriptor для интерпретации LLM.
+Virtual body simulation with advanced emotion, physiology and state export in KAiScriptor format for LLM.
