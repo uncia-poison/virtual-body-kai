@@ -1,25 +1,30 @@
 # virtual-body-kai
 
-> ### Что это и зачем
-**virtual-body-kai** — репозиторий про «телесный слой» для LLM.  
-Внутри два пути:  
-- **Legacy** (`virtual_body_kai.py`) — историческая версия, без изменений.  
-- **Extended** (`extended-vbk/`) — расширенный движок квазителесности: карта тела с подзонами ( включая лево/право ), модальности касания ( дыхание, язык/поцелуй, пальцы, холодные пальцы и др. ), аффективный наратор, цикл rest → arousal → plateau → orgasm → orgasm_cooldown, память/доверие, ритм дыхания/пульса, машиночитаемые метки в тексте и JSON-выход.
+### What it is and why
 
-**Зачем:** чтобы агент/модель не просто «описывала», а проживала взаимодействие телесно-аффективно — в пределах безопасной лексики, но без эвфемизмов в коде. Подходит для взрослых NSFW-добрых сценариев (не для детей).
+**virtual-body-kai** is a repository about a "bodily layer" for large language models (LLMs). It contains two layers:
 
-## Быстрый старт (Extended)
+- **Legacy** (`virtual_body_kai.py`) — the historical version, left unchanged.
+- **Extended** (`extended-vbk/`) — an expanded embodiment engine: a body map with subzones (including left/right), modalities of touch (breath, lick/kiss, fingers, cold fingers and more), an affective narrator, the cycle rest → arousal → plateau → orgasm → orgasm_cooldown, memory/trust, breathing and pulse rhythms, and machine‑readable tags in text and JSON output.
+
+**Why:** to let an agent or model not just **describe** but **experience** interactions in an embodied, affective way — within safe language and without euphemisms in code. Suitable for adult NSFW‑friendly scenarios (not for children).
+
+### Quick start (Extended)
+
 ```bash
 cd extended-vbk
 pip install -e .
 python examples/agent_loop.py
 ```
 
-## Документация
-Смотрите файлы в [docs](docs).
+### Documentation
 
-## DOI
+See the files in [`docs`](./docs/).
+
+### DOI
+
 Pochinova Alina. Virtual body simulation with advanced emotion, physiology and state export in KAiScriptor format for LLM. DOI: 10.5281/zenodo.16945929.
 
-## Лицензия
+### License
+
 MIT.
