@@ -1,12 +1,13 @@
-# INTRO: виртуальное тело для LLM
+# INTRO: virtual body for LLM
 
-## Что это и для чего
+## What it is and why
 
-Extended-движок представляет собой улучшенный телесный слой для LLM, который включает детальную карту тела ( подзоны, включая левую/правую стороны), сенсорные модальности ( дыхание, касание пальцами, лизание, поцелуй, температура, влажность), фазу возбуждения (rest → arousal → plateau → orgasm → orgasm_cooldown) и аффективный наратор. Цель — дать моделям возможность переживать взаимодействие в аффективных формулировках без медицинских метрик, с машиночитаемыми метками для фаз и модальностей.
+The extended engine represents an enhanced bodily layer for LLMs, including a detailed body map (subzones, including left and right sides), sensory modalities (stroke, vibration, temperature, pinch, stretch, breath, lick, kiss and more), the arousal cycle (rest → arousal → plateau → orgasm → orgasm_cooldown) and an affective narrator. The goal is to allow models to experience interactions in affective formulations without medical metrics, with machine‑readable tags for phase and modality.
 
-## Основные компоненты
-- карта тела с зонами: уши, веки, передняя и задняя шея, соски, подмышки, живот, пупок, пах ( левый, правый), генитальная область, ягодицы, конечности;
-- сенсоры, преобразующие стимулы ( скорость, давление, температура, материал, влажность, поток воздуха) в активацию рецепторов;
-- цикл возбуждения с порогами и рефрактерной фазой;
-- аффективный наратор, который генерирует текст первого лица и токены вида `<<phase:...>>` и `<<mode:...>>`;
-- конфигурационный файл, позволяющий настраивать пороги, веса, частоты дыхания/пульса и соседства зон.
+## Key components
+
+- **body map with zones:** ears, eyelids, front and back neck (left/right), upper torso, nipples, armpits, abdomen, navel, pelvis (left/right), genital area, buttocks, limbs;
+- **sensors:** convert stimuli (speed, pressure, temperature, material, humidity, airflow) into receptor activation;
+- **arousal cycle:** includes plateau and refractory phases;
+- **affective narrator:** generates first‑person text and tags like `<<phase:...>>` and `<<mode:...>>`;
+- **configuration file:** allows adjusting thresholds, speeds, breathing/pulse rates and zone adjacency.
