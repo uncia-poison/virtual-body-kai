@@ -1,0 +1,27 @@
+[
+  {
+    "id": "P_CALM_FIX",
+    "events": [
+      {"key":"hold","zone":"","val":"+0.4","dur":"300ms"},
+      {"key":"gaze","zone":"","val":"+0.3","dur":"1s"},
+      {"key":"rhythm","zone":"","val":"66","dur":""}
+    ],
+    "policy_shift": {"tempo_bias": -0.2, "pause_bias": 0.2}
+  },
+  {
+    "id": "P_CLOSE_IN",
+    "events": [
+      {"key":"dist","zone":"sternum","val":"micro","dur":"1s"},
+      {"key":"weight","zone":"sternum","val":"+0.3","dur":"1s"}
+    ],
+    "policy_shift": {"imper_bias": 0.2}
+  },
+  {
+    "id": "P_SOFTEN",
+    "events": [
+      {"key":"press","zone":"neck_ant","val":"+0.2","dur":"1s"},
+      {"key":"heat","zone":"sternum","val":"+0.4","dur":"2s"}
+    ],
+    "policy_shift": {"imper_bias": -0.2, "pause_bias": 0.1}
+  }
+]
