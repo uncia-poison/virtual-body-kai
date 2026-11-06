@@ -370,7 +370,7 @@ class EmbodimentEngine:
         return {
             "schema": SCHEMA_VERSION,
             "simulation": True,
-            "simulation_time_s": round(self.sim_time_s, 6),
+            "simulation_time_s": self.sim_time_s,
             "sequence": self.sequence,
             "internal": asdict(self.internal),
             "surface": {name: asdict(s) for name, s in self.region_state.items()},
