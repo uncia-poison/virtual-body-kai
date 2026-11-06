@@ -104,6 +104,14 @@ class EmbodimentTests(unittest.TestCase):
         self.assertEqual(clone.snapshot()["recent_percepts"], body.snapshot()["recent_percepts"])
         self.assertEqual(clone.snapshot()["joints_deg"], body.snapshot()["joints_deg"])
 
+    def test_fractional_ticks_restore_without_time_loss(self):
+        body = EmbodimentEngine()
+        for _ in range(101):
+            body.step(.1, [SensoryEvent("touch", "hand_left", .1)])
+        restored = EmbodimentEngine.from_snapshot(json.loads(json.dumps(body.snapshot())))
+        self.assertEqual(restored.sim_time_s, body.sim_time_s)
+        self.assertEqual(len(restored.history), len(body.history))
+
     def test_corrupt_snapshot_rejected(self):
         body = EmbodimentEngine()
         data = body.snapshot()
