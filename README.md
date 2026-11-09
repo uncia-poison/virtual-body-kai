@@ -1,5 +1,11 @@
 # virtual-body-kai
 
+### Embodiment v3
+
+[Start here for the MuJoCo embodiment runtime](embodiment_v3/README.md). It connects
+a model's actions to simulated physical observations and saves a resumable history.
+[Embodiment v2](embodiment_v2/README.md) also runs independently without MuJoCo.
+
 ### What it is and why
 
 **virtual-body-kai** is a repository about a "bodily layer" for large language models (LLMs). It contains two layers:

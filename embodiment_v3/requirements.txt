@@ -1,0 +1,2 @@
+# The tested solver version is part of the checkpoint compatibility contract.
+mujoco==3.17.0
